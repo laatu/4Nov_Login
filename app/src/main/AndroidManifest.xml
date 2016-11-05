@@ -24,6 +24,7 @@
         </activity>
         <activity            android:name=".LoginActivity"      android:screenOrientation="portrait" />
         <activity            android:name=".FirstActivity_Second"      android:screenOrientation="portrait" />
+        <activity            android:name=".Shortcut1"      android:screenOrientation="portrait" />
 
     </application>
 

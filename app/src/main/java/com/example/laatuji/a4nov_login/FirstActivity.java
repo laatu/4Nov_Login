@@ -29,6 +29,8 @@ public class FirstActivity extends AppCompatActivity {
         b1=  (AppCompatImageButton) findViewById(R.id.ib1);
         b2 = (AppCompatImageButton) findViewById(R.id.ib2);
        TextView tv3 = (TextView) findViewById(R.id.tv2);
+        TextView tv10 = (TextView) findViewById(R.id.tv10);
+
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +63,11 @@ public class FirstActivity extends AppCompatActivity {
 
     public void SecondClick (View view){
         Intent intent=new Intent(getApplicationContext(),FirstActivity_Second.class);
+        startActivity(intent);
+    }
+
+    public void Click_10 (View view){
+        Intent intent=new Intent(getApplicationContext(),Shortcut1.class);
         startActivity(intent);
     }
 }

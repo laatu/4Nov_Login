@@ -33,6 +33,17 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
+        android:text="shortcut"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:id="@+id/tv10"
+        android:layout_above="@+id/ib1"
+        android:onClick="Click_10"/>
+
+    <TextView
     android:text="Second"
     android:layout_width="match_parent"
     android:layout_height="70dp"
@@ -57,4 +68,5 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="105dp" />
+
 </RelativeLayout>

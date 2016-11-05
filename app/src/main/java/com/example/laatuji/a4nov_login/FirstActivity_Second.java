@@ -5,17 +5,14 @@ package com.example.laatuji.a4nov_login;
  */
 
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatImageButton;
+import android.view.View;
 import android.widget.TextView;
 
-import com.example.laatuji.a4nov_login.LoginActivity;
-
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity_Second extends AppCompatActivity {
 // AppCompactImage
 //   Button b1,b2;
     AppCompatImageButton b1,b2;
@@ -23,12 +20,12 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first);
+        setContentView(R.layout.activity_first_second_layout);
 
 
         b1=  (AppCompatImageButton) findViewById(R.id.ib1);
         b2 = (AppCompatImageButton) findViewById(R.id.ib2);
-       TextView tv3 = (TextView) findViewById(R.id.tv2);
+        TextView tv2 = (TextView) findViewById(R.id.tv2);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +57,7 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     public void SecondClick (View view){
-        Intent intent=new Intent(getApplicationContext(),FirstActivity_Second.class);
+        Intent intent=new Intent(getApplicationContext(),FirstActivity.class);
         startActivity(intent);
     }
 }

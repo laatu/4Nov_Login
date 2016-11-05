@@ -10,7 +10,7 @@
 
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.laatuji.a4nov_login.FirstActivity">
+    tools:context="com.example.laatuji.a4nov_login.FirstActivity_Second">
 
     <ImageButton
         android:layout_width="170dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/a"
         android:id="@+id/ib1"
         android:onClick="adminClicked"
-        android:layout_alignTop="@+id/ib2"
+        android:layout_below="@+id/tv1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -28,21 +28,22 @@
         app:srcCompat="@drawable/b"
         android:id="@+id/ib2"
         android:onClick="userClicked"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tv1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-    android:text="Second"
-    android:layout_width="match_parent"
-    android:layout_height="70dp"
-    android:textAlignment="center"
-    android:textStyle="bold"
-    android:textSize="30dp"
-    android:id="@+id/tv2"
-    android:layout_above="@+id/ib1" />
-        <!--android:onClick="SecondClick"-->
-    <!--Uncommment it to check possibilites to go for diff screens-->
+        android:text="First"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/tv2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="SecondClick"/>
 
 
     <TextView
@@ -53,8 +54,8 @@
         android:textStyle="bold"
         android:textSize="48dp"
         android:id="@+id/tv1"
-        android:layout_above="@+id/ib1"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="105dp" />
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
